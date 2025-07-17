@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+}
+h3{
+    border-bottom: 2px solid brown;
+}
+h2, h3, h1, thead{
+    color: brown;
+}
+
+td{
+    padding-right: 50px;
+}
+
+.TV {
+    padding-left: 100px;
+    color: brown;
+    font-weight: bold;
+}
+.total{
+    background-color: rgb(244, 166, 98);
+    padding-left: 100px;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+}
