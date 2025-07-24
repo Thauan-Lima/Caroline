@@ -8,19 +8,34 @@ h2, h3, h1, thead{
     color: brown;
 }
 
+thead{
+    font-style: italic;
+}
+td:first-child{
+    text-align: left;
+    padding-right: 200px;
+}
 td{
-    padding-right: 50px;
+    padding-right: 90px;
+    text-align: right;
 }
 
+th{
+    padding-right: 60px;
+}
 .TV {
-    padding-left: 100px;
+    padding-left:  130px;
     color: brown;
     font-weight: bold;
 }
 .total{
     background-color: rgb(244, 166, 98);
-    padding-left: 100px;
+    padding-left: 130px;
     display: block;
     margin: auto;
     font-weight: bold;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
