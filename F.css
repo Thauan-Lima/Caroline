@@ -1,8 +1,16 @@
 body{
     text-align: center;
-
+    background-color: aquamarine;
 }
 
 input, textarea{
-    border: 3.5px solid black;
+    border: 3.5px solid rgb(0, 0, 0);
+}
+
+Div{
+    background-color: rgb(255, 248, 235);
+    border: 2px solid rgb(0, 0, 0);
+    display: block;
+    margin: auto;
+    width: 300px;
 }
