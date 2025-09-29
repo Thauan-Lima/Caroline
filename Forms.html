@@ -7,17 +7,29 @@
     <title>Formulário</title>
 </head>
 <body>
-    <DIV>
-        <h1>Formulário</h1>
+    <h1>Formulário</h1>
+    <Div>
         <form>
+        <br>
         <label for="nome"><strong>Nome Completo: </label><br>
         <input type="text" id="nome" name="nome"/><br>
         <br>
-        <label for="tarefa">Tarefa:</label><br>
-        <textarea></textarea>
+        <label for="email"><strong>E-mail do usuário: </label><br>
+        <input type="email" id="email" name="email"/><br>
         <br>
-        <input type="submit" value="submit"/>
-    
+        <label for="tarefa">Tarefa:</label><br>
+        <textarea for="tarefa" id="tarefa" name="tarefa"></textarea>
+        <br>
+        <label for="formato">Formato da saída: </label><br>
+        <select>
+            <option value="tabela">Tabela</option>
+            <option value="lista">Lista</option>
+            <option value="codigo">Código</option>
+            <option value="texto_corrido">Texto Corrido</option>
+        </select><br>
+        <br>
+        <input type="submit" value="submit"/><br>
+        <br>
     </form>
     </Div>
 </body>
