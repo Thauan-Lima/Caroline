@@ -1,6 +1,12 @@
 body{
-    text-align: center;
     background-color: aquamarine;
+    font-size: 25px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    
 }
 
 input, textarea{
@@ -10,8 +16,15 @@ input, textarea{
 Div{
     background-color: rgb(255, 248, 235);
     border: 2px solid rgb(0, 0, 0);
-    font-size: 25px;
     height: 800px;
     width: 1600px;
     margin: auto;
+}
+
+#nome, #email, #tarefa, #opcao, #submit {
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
 }
