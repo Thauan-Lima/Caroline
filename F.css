@@ -4,26 +4,22 @@ body{
     text-align: center;
 }
 
-h1{
-    text-align: center;
-    
-}
-
 input, textarea{
     border: 3.5px solid rgb(0, 0, 0);
 }
 
-Div{
+div{
     background-color: rgb(255, 248, 235);
-    border: 2px solid rgb(0, 0, 0);
+    border: 2.5px solid rgb(0, 0, 0);
     height: 800px;
     width: 1600px;
-    margin: auto;
+    margin: auto;   
 }
 
 #nome, #email, #tarefa, #opcao, #submit {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
     padding: 10px;
     width: 100%;
     max-width: 400px;
