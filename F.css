@@ -5,21 +5,29 @@ body{
 }
 
 input, textarea{
-    border: 3.5px solid rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
 }
 
-div{
+.dados{
     background-color: rgb(255, 248, 235);
     border: 2.5px solid rgb(0, 0, 0);
     width: 980px;
     margin: auto;   
+    display: flex;
+    flex-direction: column;
 }
 
-#nome, #email, #tarefa, #opcao, #submit {
+#nome, #email, #tarefa, #info, #opcao, #submit {
     margin-bottom: 15px;
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
     width: 100%;
     max-width: 400px;
+}
+
+@media screen and (max-width: 900px) {
+    .dados {
+        flex-direction: column;
+    }    
 }
