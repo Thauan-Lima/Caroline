@@ -34,5 +34,11 @@ input, textarea{
 @media screen and (max-width: 900px) {
     .dados {
         flex-direction: column;
-    }    
+        display: table-cell;
+    }
+    #nome, #email, #tarefa, #info, #Persona, #formato, #submit {
+    font-size: 15px;
+    padding: 10px;
+    width: 80%;
+    }
 }
