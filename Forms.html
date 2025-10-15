@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="F.css"/>
+    <link rel="stylesheet" href="F_Style.css"/>
     <title>Formulário</title>
 </head>
 <body>
     <h1>Formulário</h1>
-        <form>
+        <form id="formPrompt">
         <div class="dados">
         <section>
             <label for="nome"><strong>Nome Completo: </label><br>
@@ -24,21 +24,37 @@
         </section>
         <section>
             <label for="info">Informações extras:</label><br>
-            <textarea for="info" id="info" name="tarefa" placeholder="Digite informações extras" size="60" required></textarea><br>
+            <textarea for="info" id="info" name="tarefa" placeholder="Digite informações extras" size="60"></textarea><br>
         </section>
         <section>
-            <label for="formato">Formato da saída: </label><br>
-            <select id="opcao">
-                <option value="tabela">Tabela</option>
-                <option value="lista">Lista</option>
-                <option value="codigo">Código</option>
-                <option value="texto_curto">Texto Curto</option>
+            <label for="Persona">Tipo de interação: </label><br>
+            <select id="Persona">
+                <option value="Objetivo">Objetivo/Prático</option>
+                <option value="Dissetativo">Dissertativo/Explicativo</option>
+                <option value="Erudito">Acadêmico/Erudito</option>
+                <option value="Informal">Informal/Conversacional</option>
+                <option value="Outro">Outro</option>
             </select><br>
         </section>
         <section>
-            <input type="submit" value="submit" id="submit"/><br>
+            <label for="formato">Formato da saída: </label><br>
+            <select id="formato">
+                <option value="texto_curto">Texto Curto</option>
+                <option value="tabela">Tabela</option>
+                <option value="lista">Lista</option>
+                <option value="codigo">Código</option>
+            </select><br>
+        </section>
+        <section>
+            <button type="submit" value="submit" id="submit">Gerar Prompt</button><br>
         </section>
         </div>
     </form>
+
+    <div id="resultaPrompt">
+
+    </div>
+
+    <script src="F_Script.js"></script>
 </body>
 </html>
