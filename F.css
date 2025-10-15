@@ -15,6 +15,7 @@ input, textarea{
 .dados{
     background-color: rgb(255, 248, 235);
     border: 2.5px solid rgb(0, 0, 0);
+    border-radius: 50px;
     width: 980px;
     margin: auto;   
     display: flex;
