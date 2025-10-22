@@ -1,7 +1,19 @@
 const form = document.getElementById('formPrompt');
 
+
+
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    
+    const nome = document.getElementById('nome').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const tarefa = document.getElementById('tarefa').value.trim();
+    const info = document.getElementById('info').value.trim();
+    const persona = document.getElementById('persona').value.trim();
+    const formato = document.getElementById('formato').value.trim();
+    const submit = document.getElementById('submit').value.trim();
+
+    const prompt = `${nome}; ${email}; ${tarefa}; ${info}; ${persona}; ${formato}!`;
+    const resultado = document.getElementById('outPrompt');
+    resultado.textContent = prompt;
 });
