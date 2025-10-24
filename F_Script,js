@@ -1,4 +1,4 @@
-const form = document.getElementById('formPrompt');
+onst form = document.getElementById('formPrompt');
 
 
 
