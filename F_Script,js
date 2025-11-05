@@ -1,19 +1,26 @@
-const form = document.getElementById('formPrompt');
+let form = document.getElementById('formPrompt');
 
 
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const nome = document.getElementById('nome').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const tarefa = document.getElementById('tarefa').value.trim();
-    const info = document.getElementById('info').value.trim();
-    const persona = document.getElementById('persona').value.trim();
-    const formato = document.getElementById('formato').value.trim();
-    const submit = document.getElementById('submit').value.trim();
-
-    const prompt = `${nome}; ${email}; ${tarefa}; ${info}; ${persona}; ${formato}!`;
-    const resultado = document.getElementById('outPrompt');
+    let nome = document.getElementById('nome').value.trim();
+    let email = document.getElementById('email').value.trim();
+    let tarefa = document.getElementById('tarefa').value.trim();
+    let info = document.getElementById('info').value.trim();
+    let persona = document.getElementById('persona').value.trim();
+    let formato = document.getElementById('formato').value.trim();
+    let submit = document.getElementById('submit').value.trim();
+    let prompt;
+    if(info.trim() != "") {
+        prompt = `${nome}\n${email}\n${tarefa}\n${info}\nTipo de interação desejada:${persona}\nFormato da Saída:${formato}\n:D`;
+    } else {
+        prompt = `${nome}\n${email}\n${tarefa}\nTipo de interação desejada:${persona}\nFormato da Saída:${formato}\n:D`;
+    }
+    
+    let resultado = document.getElementById('outPrompt');
     resultado.textContent = prompt;
+
+    resultado.style.display = 'block';
 });
