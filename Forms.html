@@ -1,60 +1,83 @@
 <!DOCTYPE html>
-<html lang="Pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="F_Style.css"/>
-    <title>Formulário</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="F_Style.css">
+  <title>Formulário</title>
 </head>
 <body>
-    <h1>Formulário</h1>
-        <form id="formPrompt">
-        <div class="dados">
-        <section>
-            <label for="nome"><strong>Nome Completo: </label><br>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" size="0.5" required/><br>
-            </section>
-        <section>
-            <label for="email">E-mail do usuário: </label><br>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail aqui" size="60" required/><br>
-        </section>
-        <section>
-            <label for="tarefa">Tarefa:</label><br>
-            <textarea for="tarefa" id="tarefa" name="tarefa" placeholder="Digite a tarefa a ser executada" size="60" required></textarea><br>
-        </section>
-        <section>
-            <label for="info">Informações extras:</label><br>
-            <textarea for="info" id="info" name="tarefa" placeholder="Digite informações extras" size="60"></textarea><br>
-        </section>
-        <section>
-            <label for="persona">Tipo de interação: </label><br>
-            <select id="persona">
-                <option value="Objetivo">Objetivo/Prático</option>
-                <option value="Dissetativo">Dissertativo/Explicativo</option>
-                <option value="Erudito">Acadêmico/Erudito</option>
-                <option value="Informal">Informal/Conversacional</option>
-                <option value="Outro">Outro</option>
-            </select><br>
-        </section>
-        <section>
-            <label for="formato">Formato da saída: </label><br>
-            <select id="formato">
-                <option value="texto">Texto Curto</option>
-                <option value="tabela">Tabela</option>
-                <option value="lista">Lista</option>
-                <option value="codigo">Código</option>
-            </select><br>
-        </section>
-        <section>
-            <button type="submit" value="submit" id="submit">Gerar Prompt</button><br>
-        </section>
-        </div>
-    </form>
-    <br>
-    <div id="outPrompt">
-        
-    </div>
 
-    <script src="F_Script.js"></script>
+  <h1>Formulário</h1>
+
+  <div class="help-container">
+    <input type="checkbox" id="help-toggle">
+    <label for="help-toggle" class="help-button">
+      O que é um prompt?
+    </label>
+
+    <div class="help-box">
+      <strong>Prompt</strong>
+      <p><em>
+        Um prompt é o texto ou instrução que você fornece a uma inteligência
+        artificial para orientar o tipo de resposta que ela deve gerar.
+        Quanto mais claro e específico for o prompt, melhor será o resultado.
+      </em></p>
+    </div>
+  </div>
+
+  <form id="formPrompt">
+
+    <div class="dados">
+
+      <div class="form-group">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+      </div>
+
+      <div class="form-group">
+        <label for="tarefa">Tarefa</label>
+        <textarea id="tarefa" name="tarefa" placeholder="Digite a tarefa" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="info">Informações extras</label>
+        <textarea id="info" name="info" placeholder="Digite informações extras"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="persona">Tipo de interação</label>
+        <select id="persona" name="persona">
+          <option value="Objetiva">Objetivo / Prático</option>
+          <option value="Dissertativa">Dissertativo / Explicativo</option>
+          <option value="Erudita">Acadêmico / Erudito</option>
+          <option value="Informal">Informal / Conversacional</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="formato">Formato da saída</label>
+        <select id="formato" name="formato">
+          <option value="Texto">Texto</option>
+          <option value="Tabela">Tabela</option>
+          <option value="Lista">Lista</option>
+          <option value="Código">Código</option>
+        </select>
+      </div>
+      <button type="submit" id="submit" class="submit-button">
+        Gerar Prompt
+      </button>
+    </div>
+  </form>
+
+  <div id="outPrompt"></div>
+
+  <script src="F_Script.js"></script>
 </body>
 </html>
