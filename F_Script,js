@@ -14,11 +14,11 @@ form.addEventListener('submit', function(event) {
     let submit = document.getElementById('submit').value.trim();
     let prompt;
     if(info.trim() != "") {
-        prompt = `${nome}\n${email}\n${tarefa}\n${info}\nTipo de interação desejada:${persona}\nFormato da Saída:${formato}\n:D`;
+        prompt = `Nome: ${nome}\nE-Mail: ${email}\n${tarefa}\n${info}\nInteração desejada: ${persona}\nFormato da Saída: ${formato}\n:D`;
     } else {
-        prompt = `${nome}\n${email}\n${tarefa}\nTipo de interação desejada:${persona}\nFormato da Saída:${formato}\n:D`;
+        prompt = `Nome: ${nome}\nE-Mail: ${email}\n${tarefa}\nInteração desejada: ${persona}\nFormato da Saída: ${formato}\n:D`;
     }
-    
+
     let resultado = document.getElementById('outPrompt');
     resultado.textContent = prompt;
 
